@@ -526,7 +526,6 @@ const ListarPedidosScreen = ({ jwt }) => {
       .getPedidos(jwt.token).then(res => {
         setPedidos(res.data)
         setLoading(true)
-        console.log(res.data)
       })
       .catch(err => Alert.alert('Erro ao carregar', err))
   }
